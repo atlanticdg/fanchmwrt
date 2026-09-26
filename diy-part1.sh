@@ -17,9 +17,9 @@ MODEL="DD"                  # 型号名
 BOARD_NAME="rockdd"         # 板子代号（小写）
 
 # DTS 来源：
-#   official = 用官方 rk3399-rock-pi-4a 的 dts
-#   custom   = 用你自己的 dts/rk3399-rockdd.dts
-DTS_MODE="official"
+#   custom   = 用你自己的 dts/rk3399-rockdd.dts（默认，含 PCIe WiFi 节点）
+#   official = 用官方 rk3399-rock-pi-4a 的 dts（仅用于排查启动问题）
+DTS_MODE="custom"
 
 # 是否产出可刷 eMMC/SD 的完整镜像（含 U-Boot）
 BUILD_SD_IMAGE="y"
